@@ -9,10 +9,10 @@ $('.owl-carousel').owlCarousel(
        itemsMobile : false,
         margin: 10,
         smartSpeed: 500,
-        loop : true,
+        loop : false,
         startPosition: 2,
-        dots: true,
-        nav: true,
+        dots: false,
+        nav: false,
         navClass: ['custom-nav  nav-prev', 'custom-nav  nav-next'],
         dotClass: 'custom-dot'
       }
