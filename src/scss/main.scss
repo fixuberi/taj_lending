@@ -577,3 +577,26 @@ p {
         margin: 18px 0;
     }
 }
+
+#top-button {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    display: none;
+    z-index: 99;
+    background: rgba(225, 225, 225, .8);
+    border-radius: 50%;
+    border: none;
+    color: #00c2b5;
+    width: 1em;
+    height: 1em;
+    line-height: 0;
+
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        transition: transform 0.9s;
+        transform: scale(2);
+      }
+}
