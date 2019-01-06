@@ -1,206 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900"
+        rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
 
 
     <title>Document</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header" id="header">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row align-items-baseline">
-                        <div class="col-1">
-                                <a href="#start"><img src=<%= require("./img/logo/tajam.png") %> alt="Tajam"></a>
-                        </div>
-                        <nav class="col header__menu">
-                            <ul>
-                                <li><a href="#start">HOME</a></li>
-                                <li><a href="#about">ABOUT</a></li>
-                                <li><a href="#expertise">EXPERTISE</a></li>
-                                <li><a href="#team">TEAMS</a></li>
-                                <li><a href="#works">WORKS</a></li>
-                                <li><a href="#feedback">PEOPLE SAY </a></li>
-                                <li><a href="#contacts">CONTACT</a></li>
-                            </ul>
-                        </nav>
+            <div class="overlay"></div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg header__menu">
+                    <a href="#start" class="navbar-brand"><img src=<%=require("./img/logo/tajam.png") %> alt="Tajam"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars fa-1x"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#start">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#expertise">EXPERTISE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#team">TEAMS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#works">WORKS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#feedback">PEOPLE SAY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contacts">CONTACT</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-10 header__content">
-                            <h2>We Are Awesome Creative Agency</h2>
-                            <hr class="line line__header">
-                            <p class="header__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                            <button class="button button__header">LEARN MORE</button>
-                        </div>
+                </nav>
+                <div class="row justify-content-center">
+                    <div class="col-10 header__content">
+                        <h2>We Are Awesome Creative Agency</h2>
+                        <hr class="line line__header">
+                        <p class="header__description">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                            vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                            consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+                            cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                        <button class="button button__header">LEARN MORE</button>
                     </div>
                 </div>
             </div>
+
         </header>
         <main>
             <section id="about" class="story">
-                <div class="story__text vertical-padding">
+                <div class="vertical-padding">
                     <div class="container">
                         <div class="row">
-                            <div class="col-5">
-                                <img src=<%= require("./img/logo/big_logo.png")%> alt="tajam">
+                            <div class="col story__logo">
+                                <img src=<%=require("./img/logo/big_logo.png")%> alt="tajam">
                             </div>
-                            <div class="col">
+                            <div class="col story__text">
                                 <h3 class="story__tittle">Our story</h3>
-                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
-                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                                    ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                                    Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
+                                    ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                                 <button class="button button__story">LEARN MORE</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="story__video">
-                    <div class="overlay">
-                        <div class="container">
-                                <div class="row video">
-                                    <div class="col align-self-center">
-                                    <a href="#">
-                                        <img class="video__play" src=<%= require("./img/icons/play.png") %> alt="play">
-                                    </a>
-                                        <div class="video__tittle">WATCH OUR STORY</div>
-                                    </div>
-                                </div>
-                           </div>
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row video">
+                            <div class="col align-self-center">
+                                <a href="#">
+                                    <img class="video__play" src=<%=require("./img/icons/play.png") %> alt="play">
+                                </a>
+                                <div class="video__tittle">WATCH OUR STORY</div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </section>
             <section id="expertise" class="expertise vertical-padding">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-6 expertise__tittle">
+                        <div class="col expertise__tittle">
                             <h3>EXPERTISE</h3>
                             <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
                             <hr class="line line__expertise">
                         </div>
                     </div>
                     <div class="row services-list">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1">
                             <div class="service">
-                                <img src=<%= require("./img/icons/design.png") %> alt="">
+                                <img src=<%=require("./img/icons/design.png") %> alt="">
                                 <h3>WEB DESIGN & DEVELOPMENT</h3>
-                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.</p>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1">
                             <div class="service">
-                                <img src=<%= require("./img/icons/branding.png") %> alt="">
+                                <img src=<%=require("./img/icons/branding.png") %> alt="">
                                 <h3>BRANDING IDENTITY</h3>
-                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.</p>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1">
                             <div class="service">
-                                <img src=<%= require("./img/icons/mobile.png") %> alt="">
+                                <img src=<%=require("./img/icons/mobile.png") %> alt="">
                                 <h3>MOBILE APP</h3>
-                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.</p>
                             </div>
                         </div>
-                        <hr class="line line__services-list">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1">
                             <div class="service">
-                                <img src=<%= require("./img/icons/search.png") %> alt="">
+                                <img src=<%=require("./img/icons/search.png") %> alt="">
                                 <h3>SEARCH ENGINE OPTIMIZATION</h3>
-                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.</p>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1">
                             <div class="service">
-                                <img src=<%= require("./img/icons/game.png") %> alt="">
+                                <img src=<%=require("./img/icons/game.png") %> alt="">
                                 <h3>GAME DEVELOPMENT</h3>
-                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.</p>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1">
                             <div class="service">
-                                <img src=<%= require("./img/icons/love.png") %> alt="">
+                                <img src=<%=require("./img/icons/love.png") %> alt="">
                                 <h3>MADE WITH LOVE</h3>
-                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet Aenean.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="team" class="team">
-                <div class="overlay">
-                    <div class="container  vertical-padding">
-                        <div class="row justify-content-center">
-                            <div class="col-6 team__tittle">
-                                <h3>MEET OUR AMAZING TEAM</h3>
-                                <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-                                <hr class="line line__team">
+                <div class="overlay"></div>
+                <div class="container  vertical-padding">
+                    <div class="row justify-content-center">
+                        <div class="col team__tittle">
+                            <h3>MEET OUR AMAZING TEAM</h3>
+                            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                            <hr class="line line__team">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <div class="team__member">
+                                <img src=<%=require("./img/faces/team1.jpg") %> alt="">
+                                <div class="worker">
+                                    <span class="worker__name">SEMF UCUK</span>
+                                    <span class="worker__ocupation">CEO & FOUNDER</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                                <div class="col-3">
-                                    <div class="team__member">
-                                        <img src=<%= require("./img/faces/team1.jpg") %> alt="">
-                                        <div class="worker">
-                                            <span class="worker__name">SEMF UCUK</span>
-                                            <span class="worker__ocupation">CEO & FOUNDER</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="team__member">
-                                        <img src=<%= require("./img/faces/team2.jpg") %> alt="">
-                                        <div class="worker">
-                                             <span class="worker__name">DIK ADALIN</span>
-                                            <span class="worker__ocupation">ENGINEERING</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="team__member">
-                                        <img src=<%= require("./img/faces/team3.jpg") %> alt="">
-                                        <div class="worker">
-                                             <span class="worker__name">JENG KOL</span>
-                                            <span class="worker__ocupation">DESIGNER</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="team__member">
-                                        <img src=<%= require("./img/faces/team4.jpg") %> alt="">
-                                        <div class="worker">
-                                             <span class="worker__name">PET ROMAK</span>
-                                            <span class="worker__ocupation">MARKETING</span>
-                                        </div>
-                                    </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <div class="team__member">
+                                <img src=<%=require("./img/faces/team2.jpg") %> alt="">
+                                <div class="worker">
+                                    <span class="worker__name">DIK ADALIN</span>
+                                    <span class="worker__ocupation">ENGINEERING</span>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="team__invite">
-                                        <p>Become part of our dream team, let’s join us !</p>
-                                        <button class="button button__hiring">WE ARE HIRING</button>
-                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <div class="team__member">
+                                <img src=<%=require("./img/faces/team3.jpg") %> alt="">
+                                <div class="worker">
+                                    <span class="worker__name">JENG KOL</span>
+                                    <span class="worker__ocupation">DESIGNER</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-3 col-sms-6 col-6">
+                            <div class="team__member">
+                                <img src=<%=require("./img/faces/team4.jpg") %> alt="">
+                                <div class="worker">
+                                    <span class="worker__name">PET ROMAK</span>
+                                    <span class="worker__ocupation">MARKETING</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="team__invite">
+                                <p>Become part of our dream team, let’s join us !</p>
+                                <button class="button button__hiring">WE ARE HIRING</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </section>
             <section id="works" class="works vertical-padding">
                 <div class="container">
                     <div class="works__tittle">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-3">
+                        <div class="row align-items-center">
+                            <div class="col-6">
                                 <h3>OUR WORKS</h3>
                             </div>
-                            <div class="col-3">
-                                <a href="#">
+                            <div class="col-6">
+                                <a href="#" class="float-right">
                                     <span>See All Project in dribbble</span>
-                                    <img src=<%= require("./img/icons/right154.svg") %> alt="">
+                                    <img src=<%=require("./img/icons/right154.svg") %> alt="">
                                 </a>
                             </div>
                         </div>
@@ -208,101 +241,126 @@
                 </div>
                 <div class="works__galery">
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work2.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work2.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work1.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work1.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work3.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work3.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work1.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work1.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work3.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work3.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work2.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work2.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work3.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work3.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work2.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work2.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work1.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work1.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work3.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work3.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work2.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work2.jpeg") %> alt="">
                     </div>
                     <div class="works__image">
-                        <img src=<%= require("./img/works/work1.jpeg") %> alt="">
+                        <img src=<%=require("./img/works/work1.jpeg") %> alt="">
                     </div>
                 </div>
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-2">
+                    <div class="row">
+                        <div class="col works__button">
                             <button class="button button__works">LOAD MORE</button>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="feedback" class="feedback-section">
-                <div class="overlay">
-                    <div class="container  vertical-padding">
-                        <div class="row justify-content-center">
-                            <div class="col-10">
-                                <div class="owl-carousel feedback-list">
-                                    <div class="feedback-item"> 
-                                        <blockquote class="feedback-item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</blockquote>
-                                        <div class="feedback-item__author">
-                                            <h4>JANE GALADRIEL</h4>
-                                            <span>CEO TENGKUREP</span> 
-                                        </div>
+                <div class="overlay"></div>
+                <div class="container  vertical-padding">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="owl-carousel feedback-list">
+                                <div class="feedback-item">
+                                    <blockquote class="feedback-item__text">This is Photoshop's version of Lorem Ipsum.
+                                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+                                        sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                        velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                                        vitae erat consequat auctor eu in elit.</blockquote>
+                                    <div class="feedback-item__author">
+                                        <h4>JANE GALADRIEL</h4>
+                                        <span>CEO TENGKUREP</span>
                                     </div>
-                                    <div class="feedback-item"> 
-                                        <blockquote class="feedback-item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</blockquote>
-                                        <div class="feedback-item__author">
-                                            <h4>JANE GALADRIEL</h4>
-                                            <span>CEO TENGKUREP</span> 
-                                        </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <blockquote class="feedback-item__text">This is Photoshop's version of Lorem Ipsum.
+                                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+                                        sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                        velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                                        vitae erat consequat auctor eu in elit.</blockquote>
+                                    <div class="feedback-item__author">
+                                        <h4>JANE GALADRIEL</h4>
+                                        <span>CEO TENGKUREP</span>
                                     </div>
-                                    <div class="feedback-item"> 
-                                        <blockquote class="feedback-item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</blockquote>
-                                        <div class="feedback-item__author">
-                                            <h4>JANE GALADRIEL</h4>
-                                            <span>CEO TENGKUREP</span> 
-                                        </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <blockquote class="feedback-item__text">This is Photoshop's version of Lorem Ipsum.
+                                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+                                        sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                        velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                                        vitae erat consequat auctor eu in elit.</blockquote>
+                                    <div class="feedback-item__author">
+                                        <h4>JANE GALADRIEL</h4>
+                                        <span>CEO TENGKUREP</span>
                                     </div>
-                                    <div class="feedback-item"> 
-                                        <blockquote class="feedback-item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</blockquote>
-                                        <div class="feedback-item__author">
-                                            <h4>JANE GALADRIEL</h4>
-                                            <span>CEO TENGKUREP</span> 
-                                        </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <blockquote class="feedback-item__text">This is Photoshop's version of Lorem Ipsum.
+                                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+                                        sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                        velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                                        vitae erat consequat auctor eu in elit.</blockquote>
+                                    <div class="feedback-item__author">
+                                        <h4>JANE GALADRIEL</h4>
+                                        <span>CEO TENGKUREP</span>
                                     </div>
-                                    <div class="feedback-item"> 
-                                        <blockquote class="feedback-item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</blockquote>
-                                        <div class="feedback-item__author">
-                                            <h4>JANE GALADRIEL</h4>
-                                            <span>CEO TENGKUREP</span> 
-                                        </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <blockquote class="feedback-item__text">This is Photoshop's version of Lorem Ipsum.
+                                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+                                        sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                        velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                                        vitae erat consequat auctor eu in elit.</blockquote>
+                                    <div class="feedback-item__author">
+                                        <h4>JANE GALADRIEL</h4>
+                                        <span>CEO TENGKUREP</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
             <section id="contacts" class="contacts">
                 <div class="container vertical-padding">
-                    <div class="row justify-content-between">
-                        <div class="col-6">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-6">
                             <div class="contacts__tittle">
                                 <h3>GIVE US A GOOD NEWS</h3>
                             </div>
@@ -314,129 +372,128 @@
                                 <input type="submmit" value="SUBMIT" class="button button__contacts">
                             </form>
                         </div>
-                        <div class="col-5 offset-1">
+                        <div class="col-10 col-md-6 col-lg-5 offset-lg-1">
                             <div class="contacts__tittle">
                                 <h3>OUR HAPPY CLIENT</h3>
                             </div>
                             <div class="contacts__brand-line">
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/zara_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/zara_logo.png") %> alt="">
                                 </div>
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/mango_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/mango_logo.png") %> alt="">
                                 </div>
                             </div>
                             <div class="contacts__brand-line">
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/barneys_new_york_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/barneys_new_york_logo.png") %> alt="">
                                 </div>
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/gucci_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/gucci_logo.png") %> alt="">
                                 </div>
                             </div>
                             <div class="contacts__brand-line">
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/calvin_klein_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/calvin_klein_logo.png") %> alt="">
                                 </div>
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/nike_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/nike_logo.png") %> alt="">
                                 </div>
                             </div>
                             <div class="contacts__brand-line">
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/converse_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/converse_logo.png") %> alt="">
                                 </div>
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/puma_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/puma_logo.png") %> alt="">
                                 </div>
                             </div>
                             <div class="contacts__brand-line">
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/levi's_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/levi's_logo.png") %> alt="">
                                 </div>
                                 <div class="brand-cell">
-                                    <img src=<%= require("./img/brands/billabong_logo.png") %> alt="">
+                                    <img src=<%=require("./img/brands/billabong_logo.png") %> alt="">
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer id="footer" class="footer">
-            <div class="overlay">
-                <div class="container vertical-padding">
-                    <div class="row footer__tittle align-items-baseline">
-                        <div class="col-4">
-                            <a href="#start"><img src=<%= require("./img/logo/tajam.png") %> alt="Tajam"></a>
-                        </div>
-                        <div class="col-4"><h3>OUR STUDIO</h3></div>
-                        <div class="col-4"><h3>STAY IN TOUCH</h3></div>
+    </div>
+    </section>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="overlay"></div>
+        <div class="container vertical-padding">
+            <div class="row footer__content">
+                <div class="col-6 col-lg-4">
+                    <a href="#start" class="footer__tittle"><img src=<%=require("./img/logo/tajam.png") %> alt="Tajam"></a>
+                    <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio
+                        sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <h3 class="footer__tittle">OUR STUDIO</h3>
+                    <div class="details">
+                        <div class="details__icon"><i class="fa fa-map-marker-alt"></i></div>
+                        <p class="details__text">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta
+                            Barat
+                            11480 - Indonesia</p>
                     </div>
-                    <div class="row footer__content">
-                        <div class="col-4">
-                            <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
-                        </div>
-                        <div class="col-4">
-                            <div class="details">
-                                <div class="details__icon"><i class="fa fa-map-marker-alt"></i></div>
-                                <p class="details__text">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
-                                        11480 - Indonesia</p>
-                            </div>
-                            <div class="details">
-                                <div class="details__icon"><i class="fa fa-phone"></i></div>
-                                <p class="details__text">(+62) 21-2224 3333</p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="subscribe">
-                                <form action="#">
-                                    <input type="email" name="email" placeholder="Subscribe our newsletter">
-                                    <button type="submit" class="fa fa-paper-plane fa-2x"></button>
-                                </form>
-                            </div>
-                            <div class="social">
-                                <div class="social__button">
-                                    <a href="#" class="fab fa-facebook-f"></a>
-                                </div>
-                                <div class="social__button">
-                                        <a href="#" class="fab fa-twitter"></a>
-                                </div>
-                                <div class="social__button">
-                                        <a href="#" class="fab fa-dribbble"></a>
-                                </div>
-                                <div class="social__button">
-                                    <a href="#" class="fab fa-instagram"></a>
-                                </div>
-                                <div class="social__button">
-                                    <a href="#" class="fab fa-google-plus-g"></a>
-                                </div>
-                                <div class="social__button">
-                                    <a href="#" class="fab fa-youtube"></a>
-                                </div>    
-                            </div>
-                        </div>
+                    <div class="details">
+                        <div class="details__icon"><i class="fa fa-phone"></i></div>
+                        <p class="details__text">(+62) 21-2224 3333</p>
                     </div>
-                    <div class="row justify-content-between">
-                        <div class="col-4">
-                            <nav class="footer__menu">
-                                <ul>
-                                    <li><a href="#">HELP</a></li>
-                                    <li><a href="#">TERMS & CONDITION</a></li>
-                                    <li><a href="#">PRIVACY</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-4 footer__copyright">
-                            <span>Copyright © 2015 - Tajem Creative</span>
+                </div>
+                <div class="col-10 offset-1 col-lg-4 offset-lg-0">
+                    <h3 class="footer__tittle footer__subscribe">STAY IN TOUCH</h3>
+                    <div class="subscribe">
+                        <form action="#">
+                            <input type="email" name="email" placeholder="Subscribe our newsletter">
+                            <button type="submit" class="fa fa-paper-plane fa-2x"></button>
+                        </form>
+                        <div class="social">
+                            <div class="social__button">
+                                <a href="#" class="fab fa-facebook-f"></a>
+                            </div>
+                            <div class="social__button">
+                                <a href="#" class="fab fa-twitter"></a>
+                            </div>
+                            <div class="social__button">
+                                <a href="#" class="fab fa-dribbble"></a>
+                            </div>
+                            <div class="social__button">
+                                <a href="#" class="fab fa-instagram"></a>
+                            </div>
+                            <div class="social__button">
+                                <a href="#" class="fab fa-google-plus-g"></a>
+                            </div>
+                            <div class="social__button">
+                                <a href="#" class="fab fa-youtube"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="row justify-content-between">
+                <div class="col-10 offset-1 col-md-6 offset-md-0">
+                    <nav class="footer__menu">
+                        <ul>
+                            <li><a href="#">HELP</a></li>
+                            <li><a href="#">TERMS & CONDITION</a></li>
+                            <li><a href="#">PRIVACY</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-10 offset-1 col-md-6 offset-md-0 footer__copyright">
+                    <span>Copyright © 2015 - Tajem Creative</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     </div>
     <button id="top-button" class="fas fa-angle-up fa-3x"></button>
 </body>
-<script type="text/javascript" src="dist/bundle.js" ></script>
+<script type="text/javascript" src="dist/bundle.js"></script>
+
 </html>
